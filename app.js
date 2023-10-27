@@ -12,6 +12,27 @@ app.get('/req', (req, res) => {
     res.send('Yo!')
 })
 
+app.get("/", (req, res) => res.type('html').send(html));
+
+app.get('/meunome', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Meu nome é Beatriz Antunes Vieira')
+})
+
+app.get("/", (req, res) => res.type('html').send(html));
+
+app.get('/tico', (req, res) => {
+    console.log("Just got a request!")
+    res.send('teco')
+})
+
+app.get("/", (req, res) => res.type('html').send(html));
+
+app.get('/pokemon', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Beatriz Antunes Vieira')
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
