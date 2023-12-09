@@ -42,7 +42,7 @@ app.get('/pokemons', (req, res) => {
   res.json(pokemons);
 });
 
-app.post('/series', (req, res) => {
+app.get('/series', (req, res) => {
   const series = [
     'Stranger Things',
     'Outer Banks',
